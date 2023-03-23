@@ -13,18 +13,27 @@
       "postId": 1
     }
   ],
-  
-    "fruits": [
-      {
-        "id": 1,
-        "name": "Mango",
-        "quantity": 10,
-        "price": 350
-      }
-    ],
-  
+  "fruits": [
+    {
+      "id": 1,
+      "name": "Mango",
+      "quantity": 10,
+      "price": 350
+    },
+    {
+      "id": 2,
+      "name": "apple",
+      "price": 500,
+      "quantity": 20
+    },
+    {
+      "id": 3,
+      "name": "sapota",
+      "price": 120,
+      "quantity": 3
+    }
+  ],
   "profile": {
     "name": "typicode"
   }
 }
- 
