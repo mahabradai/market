@@ -33,6 +33,29 @@
       "quantity": 3
     }
   ],
+  "clients": [
+    {
+      "id": 1,
+      "name": "John",
+      "email": "john@example.com",
+      "phone": "1234567890"
+    },
+    {
+      "id": 2,
+      "name": "Jane",
+      "email": "jane@example.com",
+      "phone": "0987654321"
+    }
+  ],
+    "facture": [
+      {
+        "id": 1,
+        "designation": "banane",
+        "quantity": "6",
+        "price": 6000.0,
+        "total": 24000.0
+      }
+  ],
   "profile": {
     "name": "typicode"
   }

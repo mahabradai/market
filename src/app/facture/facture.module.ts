@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { FruitsRoutingModule } from './fruits-routing.module';
+import { FactureRoutingModule } from './facture-routing.module'; 
 import { HomeComponent } from './home/home.component';
-
-import { FormsModule } from '@angular/forms';
 import { CreateComponent } from './create/create.component';
+import { FormsModule } from '@angular/forms';
 import { EditComponent } from './edit/edit.component';
 
 
@@ -13,14 +12,12 @@ import { EditComponent } from './edit/edit.component';
   declarations: [
     HomeComponent,
     CreateComponent,
-    EditComponent,
-    
+    EditComponent
   ],
   imports: [
     CommonModule,
-    FruitsRoutingModule,
+    FactureRoutingModule,
     FormsModule
-
   ]
 })
-export class FruitsModule { }
+export class FactureModule { }

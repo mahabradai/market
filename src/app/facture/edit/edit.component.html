@@ -1,0 +1,22 @@
+<div class="container">
+    <legend>Edit Item</legend>
+    <form>
+        <div class="mb-3">
+            <label for="txtDesignation" class="form-label">Designation</label>
+            <input type="text" name="designation" [(ngModel)]="factureForm.designation" class="form-control" id="txtDesignation" />
+        </div>
+        <div class="mb-3">
+            <label for="txtQuantity" class="form-label">Quantity</label>
+            <input type="number" name="quantity" [(ngModel)]="factureForm.quantity" class="form-control" id="txtQuantity" />
+        </div>
+        <div class="mb-3">
+            <label for="txtPrice" class="form-label">Price</label>
+            <input type="number" name="price" [(ngModel)]="factureForm.price" class="form-control" id="txtPrice" />
+        </div>
+        <div class="mb-3">
+            <label for="txtTotal" class="form-label">Total</label>
+            <input type="number" name="total" [(ngModel)]="factureForm.total" class="form-control" id="txtTotal" />
+        </div>
+        <button type="button" (click)="update()" class="btn btn-primary">Update</button>
+    </form>
+  </div>
