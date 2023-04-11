@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row mt-2">
         <div class="col col-md-4 offset-md-4">
-          <a class="btn btn-primary" routerLink="/fruits/create">Create</a>
+          <a class="btn btn-primary" routerLink="/vegetables/create">Create</a>
         </div>
       </div>
     <table class="table">
@@ -11,21 +11,18 @@
           <th scope="col">Name</th>
           <th scope="col">Quantity</th>
           <th scope="col">Price</th>
-          <th scope="col">Category</th>
           <th scope="col">Actions</th>
 
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let item of allFruits">
+        <tr *ngFor="let item of allVegetables">
           <th scope="row">{{ item.id }}</th>
           <td>{{ item.name }}</td>
           <td>{{ item.quantity }}</td>
           <td>{{ item.price }}</td>
-          <td>{{ item.category.name }}</td>
-
           <td>
-            <a class="btn btn-primary" [routerLink]="['/fruits/edit', item.id]">Edit</a>
+            <a class="btn btn-primary" [routerLink]="['/vegetables/edit', item.id]">Edit</a>
             <button type="button" (click)="openDeleteModal(item.id)" class="btn btn-danger">Delete</button>
 
           </td>

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './client/home/home.component'; // importer le composant HomeComponent du module client
 
 const routes: Routes = [
   {
@@ -18,6 +17,27 @@ const routes: Routes = [
     redirectTo: 'facture/home',
     pathMatch: 'full',
   },
+  {
+    path: 'category',
+    redirectTo: 'category/home',
+    pathMatch: 'full',
+  },
+  {
+    path: 'vegetables',
+    redirectTo: 'vegetables/home',
+    pathMatch: 'full',
+  },
+  {
+    path: 'review',
+    redirectTo: 'review/home',
+    pathMatch: 'full',
+  },
+  {
+    path: 'qualitycontrol',
+    redirectTo: 'review/home',
+    pathMatch: 'full',
+  },
+  
 ];
 
 @NgModule({

@@ -1,0 +1,22 @@
+<div class="container">
+    <legend>Edit Item</legend>
+    <form>
+        <div class="mb-3">
+            <label for="txtProduct" class="form-label">Product</label>
+            <input type="text" name="product" [(ngModel)]="qualitycontrolForm.product" class="form-control" id="txtProduct" />
+        </div>
+        <div class="mb-3">
+            <label for="txtDefectType" class="form-label">Defect Type</label>
+            <input type="text" name="defectType" [(ngModel)]="qualitycontrolForm.defectType" class="form-control" id="txtDefectType" />
+        </div>
+        <div class="mb-3">
+            <label for="txtDescription" class="form-label">Description</label>
+            <input type="text" name="description" [(ngModel)]="qualitycontrolForm.description" class="form-control" id="txtDescription" />
+        </div>
+        <div class="mb-3">
+            <label for="txtStatus" class="form-label">Status</label>
+            <input type="text" name="status" [(ngModel)]="qualitycontrolForm.status" class="form-control" id="txtStatus" />
+        </div>
+        <button type="button" (click)="update()" class="btn btn-primary">Update</button>
+    </form>
+</div>
